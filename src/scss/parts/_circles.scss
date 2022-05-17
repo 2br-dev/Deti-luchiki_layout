@@ -1,0 +1,159 @@
+@mixin circleRed {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	z-index: -1;
+	
+	&.small{
+		width: 360px;
+		height: 120px;
+
+		&:before{
+			width: 33.3333%;
+		}
+	}
+
+	&:before{
+		content: '';
+		display: block;
+		width: 50%;
+		height: 100%;
+		border-radius: 50%;
+		background: rgba(red, .04);
+	}
+}
+
+#hero{
+	
+	& .circle-red{
+
+		@include circleRed();
+		
+		&#red1{
+			top: 15vmin;
+			left: 12.5vw;
+			animation: rotation 86s linear infinite;
+		}
+		
+		&#red2{
+			bottom: 120px;
+			left: 25vw;
+			animation: rotation 65s linear reverse infinite;
+		}
+		
+		&#red3{
+			top: 5vw;
+			right: 32vw;
+			animation: rotation 86s linear reverse infinite;
+		}
+	}
+
+	& .circle-green{
+		
+		@extend .circle-red;
+		
+		&:before{
+			background: linear-gradient(to bottom, $primary-light, $primary);
+		}
+		
+		&.large{
+			width: 360px;
+			height: 180px
+		}
+		
+		&.small{
+			width: 120px;
+			height: 40px;
+		}
+		
+		&#green1{
+			bottom: 90px;
+			left: 20vw;
+			animation: rotation 30s linear infinite;
+			
+			&:before{
+				animation: rotation 30s linear reverse infinite;
+			}
+		}
+		
+		&#green2{
+			left: 40vw;
+			animation: rotation 10s linear reverse infinite;
+			
+			&:before{
+				animation: rotation 10s linear reverse;
+			}
+		}
+		
+		&#green3{
+			left: 50vw;
+			top: 120px;
+			
+			animation: rotation 70s linear infinite;
+			
+			&:before{
+				animation: rotation 70s linear reverse infinite;
+			}
+		}
+	}
+}
+
+#small-hero{
+
+	& .circle-red{
+
+		@include circleRed();
+
+		&#red1{
+			top: 16vmax;
+			animation: rotation 86s linear infinite;
+		}
+
+		&#red2{
+			left: 45vw;
+			top: 65%;
+			animation: rotation 45s linear reverse infinite;
+		}
+
+		&#red3{
+			right: 5%;
+			top: 30%;
+			animation: rotation 45s linear infinite;
+		}
+	}
+
+	& .circle-green{
+
+		@extend .circle-red;
+
+		&:before{
+			background: linear-gradient(to bottom, $primary-light, $primary);
+		}
+
+		&.large{
+			width: 360px;
+			height: 180px
+		}
+		
+		&.small{
+			width: 120px;
+			height: 40px;
+		}
+
+		&#green1{
+			right: 33%;
+			top: 35%;
+			animation: rotation 60s linear infinite;
+		}
+
+		&#green2{
+			bottom: 20%;
+			right: 30%;
+			animation: rotation 10s linear reverse infinite;
+		}
+
+		&:last-of-type{
+			display: none;
+		}
+	}
+}

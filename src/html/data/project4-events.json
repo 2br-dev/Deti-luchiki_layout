@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Музыкальная терапия",
+		"class": "xl3 l4 m6 s12",
+		"icon": "music"
+	},
+	{
+		"name": "Развитие социально-бытовых навыков",
+		"class": "xl3 l4 m6 s12",
+		"icon": "social"
+	},
+	{
+		"name": "Занятия творчеством",
+		"class": "xl3 l4 m6 s12",
+		"icon": "palette"
+	},
+	{
+		"name": "Занятия оздоровительной физкультурой",
+		"class": "xl3 l4 m6 s12",
+		"icon": "ball"
+	},
+	{
+		"name": "Песочная терапия",
+		"class": "xl3 l4 m6 s12",
+		"icon": "sand"
+	},
+	{
+		"name": "Логоритмика",
+		"class": "xl3 l4 m6 s12",
+		"icon": "speaker"
+	},
+	{
+		"name": "Занятия по ручной лепке из глины",
+		"class": "xl3 l4 m6 s12 offset-l2",
+		"icon": "vase"
+	},
+	{
+		"name": "«Школа моделей»",
+		"class": "xl3 l4 m6 s12",
+		"icon": "photo"
+	}
+]

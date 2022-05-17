@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Танцующие лучики",
+		"img": "/img/projects/1.jpg",
+		"bigImg": "/img/projects/1_big.jpg",
+		"class": "",
+		"link": "/project1.html"
+	},
+	{
+		"name": "Ресурсный центр",
+		"img": "/img/projects/2.jpg",
+		"bigImg": "/img/projects/2_big.jpg",
+		"class": "",
+		"link": "/project2.html"
+	},
+	{
+		"name": "Духовно-нравственное развитие",
+		"img": "/img/projects/3.jpg",
+		"bigImg": "/img/projects/3_big.jpg",
+		"class": "",
+		"link": "/project3.html"
+	},
+	{
+		"name": "Центр адаптации и развития",
+		"img": "/img/projects/4.jpg",
+		"bigImg": "/img/projects/4_big.jpg",
+		"class": "",
+		"link": "/project4.html"
+	},
+	{
+		"name": "Ранняя помощь",
+		"img": "/img/projects/5.jpg",
+		"bigImg": "/img/projects/5_big.jpg",
+		"class": "",
+		"link": "/project5.html"
+	},
+	{
+		"name": "Социо-культурные мероприятия",
+		"img": "/img/projects/6.jpg",
+		"bigImg": "/img/projects/6_big.jpg",
+		"class": "",
+		"link": "/project6.html"
+	}
+]

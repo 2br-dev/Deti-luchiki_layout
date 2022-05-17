@@ -1,0 +1,17 @@
+[
+	{
+		"howto": "Информационно-юридическая <br> поддержка",
+		"image": "/img/howto/1.jpg",
+		"class": "col l4 m6 s12"
+	},
+	{
+		"howto": "Оказать материальную <br> поддержку",
+		"image": "/img/howto/2.jpg",
+		"class": "col l4 m6 s12"
+	},
+	{
+		"howto": "Участвовать в качестве волонтёра или работодателя",
+		"image": "/img/howto/3.jpg",
+		"class": "col l4 m6 offset-m3 s12"
+	}
+]

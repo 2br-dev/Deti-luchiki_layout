@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: 'Главная'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="main">
+		<section id="hero">
+			<div class="circle-red large" id="red1"></div>
+			<div class="circle-red small" id="red2"></div>
+			<div class="circle-red small" id="red3"></div>
+			<div class="circle-green large" id="green1"></div>
+			<div class="circle-green small" id="green2"></div>
+			<div class="circle-green large" id="green3"></div>
+			<div class="container">
+				<div class="hero-text">
+					<h1>
+						<span class="hide-xl-down">
+							Центр поддержки семей, воспитывающих детей с синдромом Дауна
+						</span>
+						<span class="hide-xl-up">
+							Дети лучики
+						</span>
+					</h1>
+					<p>
+						<span class="hide-xl-down">
+							Оказываем  социально-информационную и юридическо-правовую поддержку
+						</span>
+						<div class="hide-xl-up">
+							Центр поддержки семей, воспитывающих детей с синдромом Дауна
+						</div>
+					</p>
+					<a href="" class="btn">Узнать больше</a>
+				</div>
+				<div class="hero-image lazy" data-src="/img/hero_new1.png"></div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="container">
+				<div class="row flex vcenter">
+					<div class="col s12">
+						<h2>О синдроме</h2>
+						<h3>Что такое синдром Дауна?</h3>
+					</div>
+					<div class="col l6 m12">
+						<img src="" alt="" class="lazy about-image" data-src="/img/about.jpg">
+					</div>
+					<div class="col l6 m12">
+						<p>
+							Синдром Дауна - самая распространённая генетическая аномалия. По статистике, 
+							каждый 700й-800й ребенок на планете появляется на свет с синдромом Дауна. 
+							Это соотношение одинаково в разных странах, климатических зонах, социальных слоях. 
+							Оно не зависит от образа жизни родителей, их здоровья, наличия или отсутствия 
+							вредных привычек, цвета кожи, национальности. В нашей стране ежегодно рождается 
+							около 2200 детей с синдромом Дауна. Мальчики и девочки с синдромом Дауна появляются 
+							на свет с одинаковой частотой.
+						</p>
+					</div>
+				</div>
+				<div class="row flex points">
+					<div class="col s12">
+						<div class="divider"></div>
+					</div>
+					@@loop('./parts/about-point.html', './data/about-points.json')
+					<div class="col s12">
+						<div class="divider"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects">
+			<div class="container">
+				<div class="row">
+					<div class="col s12"><h2>Наши проекты</h2></div>
+					<div class="col l8 offset-l1 large">
+						Наши проекты призваны улучшить качество жизни как маленьких ребят, так и взрослых людей с синдромом Дауна.
+					</div>
+					<div class="col l3"><a href="" class="btn">Заявка на участие</a></div>
+				</div>
+				<div class="row">
+					<div class="col xl10 l11 m12 offset-xl2 offset-l1">
+						<ul class="projects">
+							@@loop('./parts/project.html', './data/projects.json')
+						</ul>
+					</div>
+				</div>
+				<div class="row howto-wrapper">
+					<div class="col s12 center-align">
+						<h2>Как участвовать?</h2>
+					</div>
+					@@loop('./parts/howto.html', './data/howto.json')
+				</div>
+			</div>
+		</section>
+		<section id="consulting" class="padding">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<div class="consulting-header">Получить консультацию</div>
+					</div>
+					<div class="col l3 m6 s12">
+						<div class="input-field">
+							<input type="text" placeholder="Фамилия, имя, отчество">
+							<label for="">Фамилия, имя, отчество</label>
+							<div class="indicator"></div>
+						</div>
+					</div>
+					<div class="col l3 m6 s12">
+						<div class="input-field">
+							<input type="text" placeholder="Ваш телефон">
+							<label for="">Ваш телефон</label>
+							<div class="indicator"></div>
+						</div>
+					</div>
+					<div class="col l3 m6 s12">
+						<div class="input-field">
+							<input type="text" placeholder="Ваш E-mail">
+							<label for="">Ваш E-mail</label>
+							<div class="indicator"></div>
+						</div>
+					</div>
+					<div class="col l3 m6 s12">
+						<div class="input-field select-field">
+							<input type="hidden">
+							<label for="" class="list-label">С чего начать?</label>
+							<div class="indicator"></div>
+							<ul>
+								<li><a href="">С чего начать?</a></li>
+								<li><a href="">Физиотерапия и оздоровление</a></li>
+								<li><a href="">Социальная адаптация</a></li>
+								<li><a href="">Клубы и кружки по интересам</a></li>
+								<li><a href="">Муниципальные органы поддержки</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align"><a href="" class="btn">Отправить заявку</a></div>
+				</div>
+			</div>
+		</section>
+		<section id="news" class="padding">
+			<div class="container">
+				<div class="col s12 center-align">
+					<h2>Новости</h2>
+				</div>
+				<div class="row" id="top">
+					@@loop('./parts/top.html', './data/top.json')
+				</div>
+				<div class="row flex" id="rest">
+					@@loop('./parts/rest.html', './data/rest.json')
+				</div>
+				<div class="row">
+					<div class="col s12 center-align"><a href="" class="btn">Смотреть все</a></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('./parts/footer.html')
+	@@include('./parts/scripts.html')
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: 'Главная'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="project">
+		<section id="project-hero">
+			@@include('./parts/hero.html', {
+				header: 'Центр адаптации и развития детей с синдромом Дауна',
+				subheader: 'Ключевая идея нашего проекта – организация деятельности человека с синдромом Дауна вне стен дома.'
+			})
+		</section>
+		<section id="content">
+			<div class="container">
+				<div class="row flex vcenter">
+					<div class="col l6 m12">
+						<div class="lazy h" data-src="/img/projects/4_big.jpg"></div>
+					</div>
+					<div class="col l6 m12">
+						<h2>Зачем это нужно?</h2>
+						<p>Прежде всего для расширения социальных связей детей и поддержанию коммуникативных, бытовых, социальных навыков, развитию новых. Это, в свою очередь, поможет  семье справиться с трудной задачей воспитания. </p>
+						<p>Реализация проекта проходит в г. Краснодаре и г. Новороссийске, а участниками могут стать люди с синдромом Дауна и члены их семей, проживающие на всей территории Краснодарского края.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col xl4 offset-xl4 l6 offset-l3 s8 offset-s2">
+						<div class="divider"></div>
+					</div>
+					<div class="col s12 center-align">
+						<h2>В нашем центре проводятся следующие мероприятия:</h2>
+					</div>
+				</div>
+				<div class="row flex">
+					@@loop('./parts/project-event.html', './data/project4-events.json')
+				</div>
+				<div class="row">
+					<div class="col xl4 offset-xl4 l6 offset-l3 s8 offset-s2">
+						<div class="divider"></div>
+					</div>
+					<div class="col xl4 offset-xl4 l6 offset-l3 s8 offset-s2 center-align">
+						<p>Чтобы эффективность от занятий была ещё выше, все дети разбиты на группы в соответствии с возрастом и особенностями развития</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('./parts/footer.html')
+	@@include('./parts/scripts.html')
+</body>
+</html>

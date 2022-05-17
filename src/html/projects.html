@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: 'Главная'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="projects">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h1>Проекты</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<div class="projects">
+						@@loop('./parts/project1.html', './data/projects.json')
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	@@include('./parts/footer.html')
+	@@include('./parts/scripts.html')
+</body>
+</html>

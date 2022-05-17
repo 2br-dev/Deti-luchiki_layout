@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Бассейн, плавание",
+		"value": 14,
+		"percent": 70
+	},
+	{
+		"name": "Танцы",
+		"value": 5,
+		"percent": 25
+	},
+	{
+		"name": "Рисование",
+		"value": 5,
+		"percent": 25
+	},
+	{
+		"name": "Музыка",
+		"value": 5,
+		"percent": 25
+	},
+	{
+		"name": "Развивашки",
+		"value": 5,
+		"percent": 25
+	},
+	{
+		"name": "Контессори",
+		"value": 2,
+		"percent": 19
+	},
+	{
+		"name": "Горные лыжи",
+		"value": 2,
+		"percent": 19
+	}
+]

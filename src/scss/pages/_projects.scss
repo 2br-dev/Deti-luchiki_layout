@@ -1,0 +1,78 @@
+main#projects{
+
+	padding-top: 25vmin;
+	
+	& .row{
+
+		.projects{
+    
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 4vw;
+			
+			& .project{
+				
+				display: block;
+				width: 33.333%;
+				max-width: 100%;
+				color: $text;
+				position: relative;
+				overflow: hidden;
+
+				@media(max-width: $large){
+					width: 50%;
+				}
+
+				@media(max-width: $small){
+					width: 100%;
+				}
+
+				& .text{
+					display: inline-block;
+					margin-bottom: 20px;
+				}
+				
+				& .lazy{
+					
+					width: 100%;
+					background-position: center center;
+					background-repeat: no-repeat;
+					position: relative;
+					box-shadow: 0 0 0 1px #fff inset;
+					transition: background-size .4s, box-shadow .4s;
+
+					&.h{
+						background-size: 115% auto;
+					}
+
+					&.q{
+						background-size: auto 105%;
+					}
+				}
+				
+				&:hover{
+					
+					& .lazy{
+
+						&.q{
+							background-size: auto 120%;
+						}
+
+						&.h{
+							background-size: 130% auto;
+						}
+					}
+				}
+
+				@media(max-width: $small){
+
+					margin-bottom: 20px;
+					
+					& .lazy{
+						height: unset !important;
+					}
+				}
+			}
+		}
+	}
+}

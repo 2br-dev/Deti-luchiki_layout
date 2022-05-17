@@ -1,0 +1,12 @@
+.profession{
+    
+    text-align: center;
+    padding: 26px 0;
+    border-radius: 8px;
+    background-color: #efefef;
+    transition: box-shadow .2s;
+
+    &:hover{
+        box-shadow: 0 0 0 2px $accent inset;
+    }
+}

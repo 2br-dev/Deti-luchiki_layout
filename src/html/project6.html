@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: 'Главная'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="project">
+		<section id="project-hero">
+			@@include('./parts/hero.html', {
+				header: 'Социо-культурные мероприятия',
+				subheader: 'детей с синдромом Дауна'
+			})
+		</section>
+		<section id="content">
+			<div class="container">
+				<div class="row xl-offset flex vcenter">
+					<div class="col xl5 l6 m8 s12 offset-xl1">
+						<div class="lazy h" data-src="/img/projects/6_big.jpg"></div>
+					</div>
+					<div class="col xl4 offset-xl1 l6 m12">
+						<p>
+							Практика – лучший учитель. Для того, чтобы интеграция в общество проходила 
+							для детей максимально плавно и естественно, важно не только обучать их прекрасному, 
+							рассказывать о том, как вести себя в обществе, но и давать им возможность практиковаться.
+						</p>
+					</div>
+				</div>
+				<div class="row xl-offset flex vcenter">
+					<div class="col xl4 offset-xl2 l5 offset-l1 m12 order-m1">
+						<p>
+							Именно поэтому,мы регулярно организуем различные мероприятия - это праздники и интересные встречи, 
+							походы в театры, цирки, музеи, кинотеатры и другие места, где можно узнать много интересного, 
+							отдохнуть и пообщаться всей семьей.
+						</p>
+					</div>
+					<div class="col xl5 offset-xl1 l6 m8 s12">
+						<div class="lazy h" data-src="/img/meetings.jpg"></div>
+					</div>
+				</div>
+				<div class="row flex vcenter xl-offset">
+					<div class="col xl5 l6 m8 s12 offset-xl1">
+						<div class="lazy h" data-src="/img/park.jpg"></div>
+					</div>
+					<div class="col xl4 offset-xl1 l6 m12">
+						<p>
+							Благодаря этому, ребята учатся правилам поведения в общественных местах, не робеют при виде людей, 
+							знают как себя вести, чтобы не доставлять никому дискомфорт. Общество, в свою очередь, учится правильно 
+							реагировать  на человека с синдромом Дауна.
+						</p>
+					</div>
+				</div>
+				<div class="xl-offset"></div>
+			</div>
+		</section>
+	</main>
+	@@include('./parts/footer.html')
+	@@include('./parts/scripts.html')
+</body>
+</html>

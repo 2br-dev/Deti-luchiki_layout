@@ -1,0 +1,106 @@
+footer{
+    
+    background: linear-gradient(to bottom, $primary-light, $primary);
+    padding: 3vmax 0;
+    
+    & .logo{
+        display: inline-block;
+        width: 162px;
+        height: 72px;
+        background: url(/img/logo-footer.svg);
+    }
+    
+    & ul{
+        
+        margin: 0;
+        
+        & a{
+            color: #fff;
+            
+            &:hover{
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 4px;
+                text-decoration-style: dashed;
+            }
+        }
+    }
+    
+    
+    & form#subscribe{
+        
+        display: flex;
+        justify-content: flex-end;
+        
+        & .input-field-wrapper{
+            padding-right: 20px;
+            width: calc(100% - 190px);
+            max-width: 500px;
+        }
+        
+        & .button-wrapper{
+                        
+            & .btn{
+                line-height: 60px;
+                padding: 0 30px;
+            }
+        }
+
+        @media(max-width: $small){
+
+            flex-direction: column;
+            justify-content: center;
+
+            & .input-field-wrapper{
+                margin-bottom: 10px;
+                width: 100%;
+                padding-right: 0;
+            }
+
+            & .button-wrapper{
+                text-align: center;
+            }
+        }
+    }
+    
+    & .socials{
+        
+        & .social{
+            
+            font-size: 32px;
+            line-height: 50px;
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+            border-radius: 6px;
+            transition: background-color .2s;
+            color: #fff;
+            
+            &:hover{
+                background: rgba(black, .2);
+            }
+        }
+    }
+    
+    
+    @media(max-width: $large){
+        
+        & .flex{        
+            justify-content: center;
+            
+            & form#subscribe{
+                margin: 20px 0;
+                justify-content: center;
+            }
+            
+            & .socials{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footer-copyright{
+    
+    line-height: 80px;
+}

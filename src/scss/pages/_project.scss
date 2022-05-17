@@ -1,0 +1,16 @@
+main#project{
+    
+    & section{
+
+        &#content{
+    
+            margin-bottom: 4vw;
+            
+            & .container{
+        
+                background: #fff;
+                position: relative;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+POST http://deti-luchiki.local/assets/classes/sender.php
+
+{
+	"fio": "Котышков Алексей Витальевич",
+	"mail": "masterkadaj@gmail.com",
+	"phone": "+7 918 084-9370",
+	"i-want": "participate",
+	"participation-type": "project",
+	"project-name": "Testy project"
+}

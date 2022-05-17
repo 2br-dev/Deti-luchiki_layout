@@ -1,0 +1,193 @@
+main#contacts {
+
+	& .addresses {
+
+		display: flex;
+
+		& li {
+
+			& .address {
+				padding: 10px;
+				color: $text;
+				transition: font-size .2s, color .2s;
+				line-height: 28px;
+				display: block;
+				
+				&.active {
+					font-size: 28px;
+					color: $accent;
+				}
+			}
+		}
+
+		@media(max-width: $medium){
+
+			flex-direction: column;
+
+			& li{
+
+				& .address{
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+
+	& .address-content {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	& .kv-table {
+
+		border-top: 1px solid $fogged;
+		padding-top: 20px;
+
+		& .kv-row {
+
+			display: flex;
+
+			& .key,
+			& .value {
+				width: calc(50% - 10px);
+			}
+
+			& .key {
+				margin-right: 10px;
+				text-align: right;
+				color: $fogged;
+			}
+
+			& .value {
+				margin-left: 10px;
+			}
+
+			@media(max-width: $large){
+				
+				flex-wrap: wrap;
+				margin-bottom: 20px;
+
+				& .key{
+					font-size: 12px;
+					line-height: 14px;
+				}
+
+				& .key, & .value{
+					width: 100%;
+					text-align: left;
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	& .map-wrapper {
+	
+		position: relative;
+	
+		#map {
+	
+			background: #E0ECD3;
+			height: 30vmax;
+	
+			& .ol-overlaycontainer-stopevent {
+	
+				& .ol-attribution {
+					display: none;
+				}
+	
+				& .ol-rotate {
+					display: none;
+				}
+	
+				& .ol-zoom {
+					position: absolute;
+					top: 20px;
+					right: 20px;
+					display: flex;
+					flex-direction: column;
+	
+					& button {
+	
+						display: block;
+						background: #fff;
+						border: 0;
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						box-shadow: 0 0 0 1px $primary inset;
+						line-height: 10px;
+						margin: 0;
+						padding: 0;
+						font-size: 26px;
+						cursor: pointer;
+						transition: color .2s, background-color .2s;
+						margin-bottom: -6px;
+						position: relative;
+	
+						&:first-of-type {
+							z-index: 2;
+						}
+	
+						&:hover {
+							background: $primary;
+							color: #fff;
+						}
+	
+					}
+				}
+			}
+		}
+	
+		& .map-markers {
+	
+			margin: 0;
+			padding: 6px 0;
+			position: absolute;
+			z-index: 2;
+			background: #fff;
+			right: 0;
+			bottom: 50px;
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px;
+	
+			& li {
+	
+				& .address{
+					
+					padding-right: 20px;
+					display: block;
+					border-left: 2px solid transparent;
+					color: $text;
+					transition: background-color;
+					
+					&:hover{
+						background: #f5f5f5;
+					}
+					
+					&:before {
+						content: '\F034E';
+						font-family: 'Material Design Icons';
+						margin: 0 10px;
+						color: transparent;
+					}
+					
+					&.active{
+						
+						color: $primary;
+						border-left: 2px solid $primary;
+						background: #f5f5f5;
+						
+						&:before{
+							color: $primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}

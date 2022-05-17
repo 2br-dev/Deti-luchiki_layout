@@ -1,0 +1,22 @@
+// Frameworks
+@import './framework/materialdesignicons';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+@import './framework/materialize';
+
+// Parts
+@import './parts/vars';
+@import './parts/media';
+@import './parts/custom_grid';
+@import './parts/typography';
+@import './parts/header';
+@import './parts/helpers';
+@import './parts/footer';
+@import './parts/circles';
+
+// Entire pages
+@import './pages/main';
+@import './pages/projects';
+@import './pages/project';
+@import './pages/faq';
+@import './pages/professions';
+@import './pages/contacts';
